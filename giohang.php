@@ -1,5 +1,6 @@
 <?php
 include 'includes/auth_check.php';
+include 'includes/header.php';
 include 'db.php';
 
 $MaSV = $_SESSION['username']; // Lấy mã sinh viên từ session
@@ -47,3 +48,5 @@ $result = $conn->query("
     <a href="delete_all.php" onclick="return confirm('Bạn có chắc muốn xóa tất cả học phần không?');">❌ Xóa tất cả</a>
 </body>
 </html>
+
+<?php include 'includes/footer.php'; ?>

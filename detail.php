@@ -1,5 +1,6 @@
 <?php
 include 'includes/auth_check.php';
+include 'includes/header.php';
 include 'db.php';
 if (isset($_GET['id'])) {
     $MaSV = $_GET['id'];
@@ -24,3 +25,4 @@ if (isset($_GET['id'])) {
     <a href="index.php">Quay lại danh sách</a>
 </body>
 </html>
+<?php include 'includes/footer.php'; ?>

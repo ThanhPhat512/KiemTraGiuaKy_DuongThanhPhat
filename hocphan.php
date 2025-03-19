@@ -1,5 +1,6 @@
 <?php
 include 'includes/auth_check.php';
+include 'includes/header.php';
 include 'db.php';
 $result = $conn->query("SELECT * FROM HocPhan");
 ?>
@@ -31,3 +32,4 @@ $result = $conn->query("SELECT * FROM HocPhan");
     </form>
 </body>
 </html>
+<?php include 'includes/footer.php'; ?>

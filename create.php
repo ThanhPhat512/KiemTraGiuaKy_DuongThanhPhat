@@ -1,5 +1,6 @@
 <?php
 include 'includes/auth_check.php';
+include 'includes/header.php';
 include 'db.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $MaSV = $_POST['MaSV'];
@@ -26,3 +27,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     Mã Ngành: <input type="text" name="MaNganh" required><br>
     <button type="submit">Thêm</button>
 </form>
+<?php include 'includes/footer.php'; ?>
