@@ -33,7 +33,7 @@ $result = $conn->query("SELECT * FROM SinhVien");
             <td>
                 <a href="detail.php?id=<?php echo $row['MaSV']; ?>">Xem</a>
                 <a href="edit.php?id=<?php echo $row['MaSV']; ?>">Sửa</a>
-                <a href="delete.php?id=<?php echo $row['MaSV']; ?>">Xóa</a>
+                <a href="delete.php?id=<?php echo $row['MaSV']; ?>" onclick="return confirm('Bạn có chắc chắn muốn xóa sinh viên này không?');">🗑️ Xóa</a>
             </td>
         </tr>
         <?php } ?>
